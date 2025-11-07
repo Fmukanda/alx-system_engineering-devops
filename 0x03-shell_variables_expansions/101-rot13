@@ -1,0 +1,8 @@
+#!/bin/bash
+# ROT13 encoder/decoder
+
+# Read input from the first argument or from stdin
+input="${1:-$(cat)}"
+
+# Encode/decode using tr
+echo "$input" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
