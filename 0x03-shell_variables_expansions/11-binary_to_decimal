@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script converts a binary number in the environment variable BINARY to decimal
+
+echo $((2#$BINARY))
