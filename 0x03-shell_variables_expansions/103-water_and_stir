@@ -1,0 +1,17 @@
+#!/bin/bash
+# Add WATER and STIR in custom bases and print result in BESTCHOL base
+
+# Example: bases are set like this
+# export WATER_BASE=8
+# export STIR_BASE=16
+# export BESTCHOL_BASE=10
+
+# Convert WATER and STIR to decimal
+WATER_DEC=$(echo "ibase=$WATER_BASE; $WATER" | bc)
+STIR_DEC=$(echo "ibase=$STIR_BASE; $STIR" | bc)
+
+# Add numbers
+SUM=$((WATER_DEC + STIR_DEC))
+
+# Convert sum to BESTCHOL base
+echo "obase=$BESTCHOL_BASE; $SUM" | bc
