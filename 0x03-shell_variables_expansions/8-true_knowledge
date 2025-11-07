@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script prints the sum of 128 and the value of the environment variable TRUEKNOWLEDGE
+
+echo $((128 + TRUEKNOWLEDGE))
