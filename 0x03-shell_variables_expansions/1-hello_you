@@ -1,0 +1,4 @@
+#!/bin/bash
+# This script prints "hello user", where user is the current Linux username
+
+echo "hello $USER"
